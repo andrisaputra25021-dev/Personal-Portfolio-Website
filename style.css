@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Lato:wght@400;500&display=swap");
+
+:root {
+  --primary-color: cyan;
+  --secondary-color: white;
+  --background-color: black;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  scroll-margin-top: 5rem;
+}
+
+.navbar {
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  border-bottom: solid 1px var(--primary-color);
+  position: fixed;
+}
+
+#Logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  padding-left: 2rem;
+  color: var(--primary-color);
+}
+
+.navlist {
+  color: var(--primary-color);
+  list-style-type: none;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  gap: 2rem;
+  padding-right: 2rem;
+}
+
+.navlink {
+  color: var(--primary-color);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: ease-in-out, 0.25s;
+}
+
+.navlink:hover {
+  color: var(--background-color);
+  background-color: var(--primary-color);
+}
+
+#Resume {
+  color: var(--background-color);
+  background-color: var(--primary-color);
+  border: solid 1px var(--primary-color);
+}
+
+#Resume:hover {
+  color: var(--primary-color);
+  background-color: var(--background-color);
+}
+
+.Home {
+  height: 100vh;
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+.Home-content {
+  flex: 1;
+}
+
+.Home-content h1 {
+  color: var(--primary-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  max-width: 30rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(
+    45deg,
+    var(--primary-color) 45%,
+    var(--secondary-color) 60%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Home-content p {
+  color: var(--secondary-color);
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  max-width: 45rem;
+  margin-bottom: 0.5rem;
+}
+
+.Profile-picture {
+  height: 22rem;
+  width: 22rem;
+  border-radius: 50%;
+  padding: 1rem;
+  border: solid 3px var(--primary-color);
+  object-fit: cover;
+  box-shadow: 0 0 10rem var(--primary-color);
+}
+
+.Profile {
+  align-items: center;
+  position: relative;
+  padding-right: 2.5rem;
+  animation: floating 2.5s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(1rem);
+  }
+}
+
+.cta {
+  display: inline-block;
+  color: var(--background-color);
+  background-color: var(--primary-color);
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: bolder;
+  text-align: center;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: solid 1px var(--primary-color);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.cta:hover {
+  color: var(--primary-color);
+  background-color: var(--background-color);
+}
+
+.Skills {
+  height: 100vh;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+
+.Skills h1 {
+  color: var(--primary-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.Skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.skill-content {
+  background-color: rgb(18, 18, 18);
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  transition: all 0.25s ease-in-out;
+}
+
+.costum-icon {
+  color: var(--primary-color);
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+}
+
+.Skills h2 {
+  color: var(--secondary-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+}
+
+.Skills p {
+  color: var(--secondary-color);
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+}
+
+.skill-content:hover {
+  border: solid 1px var(--primary-color);
+  box-shadow: 0 0 2rem var(--primary-color);
+}
+
+.tools-icon img {
+  max-width: 8rem;
+  border-radius: 50%;
+  background-color: rgb(18, 18, 18);
+  padding: 0.75rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.tools-icon {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.tools-icon img:hover {
+  border: solid 1px var(--primary-color);
+  box-shadow: 0 0 1rem var(--primary-color);
+}
+
+.Contact {
+  height: 100vh;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+
+.Contact h1 {
+  color: var(--primary-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.Contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  padding: 0 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: auto;
+}
+
+.Contact-form h2 {
+  color: var(--secondary-color);
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.Contact-form {
+  padding: 1rem;
+  border: solid 0.25rem var(--primary-color);
+  border-radius: 1rem;
+}
+
+.form {
+  color: var(--secondary-color);
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.form-format {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-format input,
+textarea {
+  padding: 0.25rem;
+  border-radius: 0.6rem;
+}
+
+.Contact-submit {
+  color: var(--background-color);
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  border: solid 3px var(--primary-color);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin-top: 1.5rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.Contact-submit:hover {
+  color: var(--primary-color);
+  background-color: var(--background-color);
+}
+
+.address {
+  color: var(--secondary-color);
+  text-align: right;
+  font-family: "Lato", sans-serif;
+  align-self: flex-end;
+}
+
+.address h2 {
+  font-size: 2rem;
+  letter-spacing: 0.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.address p {
+  font-size: 1.2rem;
+}
+
+.sosmed-icon {
+  padding-top: 1rem;
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.sosmed-icon a {
+  color: var(--primary-color);
+}
+
+footer {
+  font-family: "Lato", sans-serif;
+  color: var(--background-color);
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 1rem;
+}
+
+footer span {
+  font-weight: bolder;
+}

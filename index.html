@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal Website Portfolio" />
+    <meta name="author" content="Andri Saputra" />
+    <link rel="icon" href="assets/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <title>Andri Saputra | Portfolio</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#Home" id="Logo">Andri Saputra</a>
+        <ul class="navlist">
+          <li><a href="#Home" class="navlink">Home</a></li>
+          <li><a href="#Skills" class="navlink">Skills</a></li>
+          <li><a href="#Contact" class="navlink">Contact</a></li>
+          <li>
+            <a
+              class="navlink"
+              id="Resume"
+              href="https://drive.google.com/uc?export=download&id=143sxTAy_MqfajVtZ5bUYNEjICPyXxlSj"
+            >
+              Resume <i class="fa-solid fa-circle-down"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="Home" class="Home">
+      <div class="Home-content">
+        <h1>Front-End <span>Developer</span></h1>
+        <p>Mengubah ide menjadi tampilan website modern dan interaktif.</p>
+        <p>
+          Menyatukan desain dengan kode untuk menghasilkan produk digital yg
+          memukau.
+        </p>
+        <a class="cta" href="#Contact">Let's connect</a>
+      </div>
+      <div class="Profile">
+        <img
+          src="assets/poto profil.jpeg"
+          alt="Andri Saputra | Front-End Developer"
+          class="Profile-picture"
+        />
+      </div>
+    </section>
+
+    <section id="Skills" class="Skills">
+      <h1>Skills</h1>
+      <div class="Skill-grid">
+        <div class="skill-content">
+          <i class="fa-solid fa-code costum-icon"></i>
+          <h2>Front-End Development</h2>
+          <p>Membangun tampilan web modern dengan HTML, CSS, dan Javascript.</p>
+        </div>
+        <div class="skill-content">
+          <i class="fa-solid fa-toolbox costum-icon"></i>
+          <h2>Tools & Workflow</h2>
+          <p>Menggunakan VSCode dan Github untuk workflow development.</p>
+        </div>
+        <div class="skill-content">
+          <i class="fa-solid fa-lines-leaning costum-icon"></i>
+          <h2>Learning Path</h2>
+          <p>Berkembang dengan Javascript dan framework modern.</p>
+        </div>
+      </div>
+      <div class="tools">
+        <h1>Tools & Technologies</h1>
+        <div class="tools-icon">
+          <img src="assets/Html logo.png" alt="HTML" />
+          <img src="assets/Css logo.png" alt="CSS" />
+          <img src="assets/Javascript logo.png" alt="Javascript" />
+        </div>
+      </div>
+    </section>
+
+    <section id="Contact" class="Contact">
+      <h1>Contact</h1>
+      <div class="Contact-grid">
+        <div class="Contact-form">
+          <h2>Get In Touch</h2>
+          <form action="get" class="form">
+            <div class="form-format">
+              <label for="name">Nama :</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-format">
+              <label for="email">Email :</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-format">
+              <label for="subject">Subjek :</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+            <div class="form-format">
+              <label for="message">Pesan :</label>
+              <textarea
+                name="message"
+                id="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button class="Contact-submit">Submit</button>
+          </form>
+        </div>
+
+        <div class="address">
+          <h2>Andri Saputra</h2>
+          <p>andri.saputra25021@gmail.com</p>
+          <p>
+            Cipinang Besar Utara, Kecamatan Jatinegara,<br />
+            Kota Jakarta Timur,<br />
+            13410
+          </p>
+          <div class="sosmed-icon">
+            <a
+              href="https://www.linkedin.com/in/andri-saputra-485357276/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/andrisaputra.21/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2025 | <span>Andri Saputra</span> | All Right Reserved.</p>
+    </footer>
+  </body>
+</html>
