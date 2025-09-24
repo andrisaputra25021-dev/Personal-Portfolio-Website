@@ -88,7 +88,8 @@
       <div class="Contact-grid">
         <div class="Contact-form">
           <h2>Get In Touch</h2>
-          <form action="get" class="form">
+          <form class="form" name="contact" method="post" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
             <div class="form-format">
               <label for="name">Nama :</label>
               <input type="text" id="name" name="name" required />
@@ -131,7 +132,7 @@
               ><i class="fa-brands fa-linkedin"></i
             ></a>
             <a
-              href="https://github.com/"
+              href="https://github.com/andrisaputra25021-dev"
               target="_blank"
               rel="noopener noreferrer"
               ><i class="fa-brands fa-github"></i
