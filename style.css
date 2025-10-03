@@ -15,7 +15,7 @@
 }
 
 section {
-  height: 100vh;
+  height: 100dvh;
   scroll-margin-top: 5rem;
 }
 
@@ -74,7 +74,7 @@ section {
 }
 
 .Home {
-  height: 100vh;
+  height: 100dvh;
   background-color: var(--background-color);
   display: flex;
   align-items: center;
@@ -157,7 +157,7 @@ section {
 }
 
 .Skills {
-  height: 100vh;
+  height: 100dvh;
   background-color: var(--background-color);
   display: flex;
   flex-direction: column;
@@ -233,7 +233,7 @@ section {
 }
 
 .Contact {
-  height: 100vh;
+  height: 100dvh;
   background-color: var(--background-color);
   display: flex;
   flex-direction: column;
