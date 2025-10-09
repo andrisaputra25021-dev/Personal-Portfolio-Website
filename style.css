@@ -19,6 +19,10 @@ section {
   scroll-margin-top: 5rem;
 }
 
+.menu {
+  display: none;
+}
+
 .navbar {
   top: 0;
   background-color: rgba(0, 0, 0, 0.75);
