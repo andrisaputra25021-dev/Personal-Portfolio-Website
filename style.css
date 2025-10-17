@@ -378,9 +378,10 @@ footer span {
     padding-right: 0;
     position: absolute;
     top: 5rem;
-    right: 0;
+    right: -30rem;
     background-color: rgba(0, 0, 0, 0.75);
     width: 30vh;
+    transition: all 0.2s ease-in-out;
   }
 
   .navlist li {
@@ -388,24 +389,7 @@ footer span {
     padding: 1.5rem;
   }
 
-  .navlist {
-    display: none;
-    transition: all 0.25s ease-in-out;
-  }
-
   .navlist.active {
-    display: flex;
-    animation: slideIn 0.25s ease forwards;
-
-    @keyframes slideIn {
-      from {
-        opacity: 0;
-        transform: translateY(-20%);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+    right: 0;
   }
 }
