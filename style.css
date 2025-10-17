@@ -39,7 +39,7 @@ section {
 #Logo {
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
-  padding-left: 2rem;
+  padding-left: 2.5%;
   color: var(--primary-color);
 }
 
@@ -358,4 +358,54 @@ footer {
 
 footer span {
   font-weight: bolder;
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 60%;
+  }
+
+  .menu {
+    display: flex;
+    color: var(--primary-color);
+    font-size: 3rem;
+    padding-right: 2.5%;
+  }
+
+  .navlist {
+    display: block;
+    text-align: right;
+    padding-right: 0;
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 30vh;
+  }
+
+  .navlist li {
+    border: solid 1px var(--primary-color);
+    padding: 1.5rem;
+  }
+
+  .navlist {
+    display: none;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .navlist.active {
+    display: flex;
+    animation: slideIn 0.25s ease forwards;
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20%);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
 }
