@@ -360,7 +360,7 @@ footer span {
   font-weight: bolder;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 640px) and (orientation: portrait) {
   html {
     font-size: 70%;
   }
