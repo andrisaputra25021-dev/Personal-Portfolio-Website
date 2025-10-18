@@ -362,7 +362,11 @@ footer span {
 
 @media (max-width: 640px) {
   html {
-    font-size: 60%;
+    font-size: 70%;
+  }
+
+  #Logo {
+    font-size: 150%;
   }
 
   .menu {
