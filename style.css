@@ -50,8 +50,8 @@ section {
   font-size: 1.5rem;
   font-weight: bold;
   display: flex;
-  gap: 2rem;
-  padding-right: 2rem;
+  gap: 5;
+  padding-right: 5;
 }
 
 .navlink {
@@ -181,8 +181,8 @@ section {
 .Skill-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  padding: 0 2rem;
+  gap: 5;
+  padding: 0 5;
 }
 
 .skill-content {
@@ -195,7 +195,7 @@ section {
 
 .costum-icon {
   color: var(--primary-color);
-  font-size: 2rem;
+  font-size: 5;
   display: block;
   padding-bottom: 0.5rem;
 }
@@ -214,7 +214,7 @@ section {
 
 .skill-content:hover {
   border: solid 1px var(--primary-color);
-  box-shadow: 0 0 2rem var(--primary-color);
+  box-shadow: 0 0 5 var(--primary-color);
 }
 
 .tools-icon img {
@@ -228,7 +228,7 @@ section {
 .tools-icon {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 5;
 }
 
 .tools-icon img:hover {
@@ -258,10 +258,10 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 5;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 5;
   max-width: auto;
 }
 
@@ -328,7 +328,7 @@ textarea {
 }
 
 .address h2 {
-  font-size: 2rem;
+  font-size: 5;
   letter-spacing: 0.15rem;
   margin-bottom: 0.5rem;
 }
@@ -374,26 +374,30 @@ footer span {
     color: var(--primary-color);
     font-size: 3rem;
     padding-right: 2.5%;
+    z-index: ;
+    cursor: pointer;
   }
 
   .navlist {
-    display: block;
-    text-align: right;
-    padding-right: 0;
     position: absolute;
     top: 5rem;
-    right: -30rem;
+    right: -100%;
+    width: auto;
+    height: auto;
     background-color: rgba(0, 0, 0, 0.75);
-    width: 30vh;
-    transition: all 0.2s ease-in-out;
-  }
-
-  .navlist li {
+    display: block;
+    text-align: right;
+    transition: right 0.25s ease-in-out;
     border: solid 1px var(--primary-color);
-    padding: 1.5rem;
   }
 
   .navlist.active {
     right: 0;
+  }
+
+  .navlist li {
+    color: var(--background-color);
+    border: none;
+    margin: 2rem;
   }
 }
