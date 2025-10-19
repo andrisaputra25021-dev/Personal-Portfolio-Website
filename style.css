@@ -409,12 +409,12 @@ footer span {
   }
 
   .Home {
+    height: 100dvh;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 7rem;
     padding-left: 5%;
     padding-right: 5%;
     gap: 1.5rem;
