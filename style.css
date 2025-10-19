@@ -105,6 +105,7 @@ section {
     var(--primary-color) 45%,
     var(--secondary-color) 60%
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -390,7 +391,7 @@ footer span {
     width: auto;
     height: auto;
     background-color: rgba(0, 0, 0, 0.75);
-    display: block;
+    display: inline-block;
     text-align: right;
     transition: right 0.25s ease-in-out;
     border: solid 1px var(--primary-color);
@@ -404,5 +405,32 @@ footer span {
     color: var(--background-color);
     border: none;
     margin: 2rem;
+    margin-right: 0;
+  }
+
+  .Home {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 7rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 1.5rem;
+  }
+
+  .Profile {
+    padding: 0;
+  }
+
+  @keyframes floating {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(0.5rem);
+    }
   }
 }
