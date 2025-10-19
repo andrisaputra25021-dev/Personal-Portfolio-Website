@@ -83,7 +83,7 @@ section {
 }
 
 .Home {
-  height: 100dvh;
+  min-height: 100dvh;
   background-color: var(--background-color);
   display: flex;
   align-items: center;
@@ -167,7 +167,7 @@ section {
 }
 
 .Skills {
-  height: 100dvh;
+  min-height: 100dvh;
   background-color: var(--background-color);
   display: flex;
   flex-direction: column;
@@ -187,8 +187,8 @@ section {
 .Skill-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 5;
-  padding: 0 5;
+  gap: 2rem;
+  padding: 0 2.5rem;
 }
 
 .skill-content {
@@ -201,7 +201,7 @@ section {
 
 .costum-icon {
   color: var(--primary-color);
-  font-size: 5;
+  font-size: 2rem;
   display: block;
   padding-bottom: 0.5rem;
 }
@@ -220,7 +220,7 @@ section {
 
 .skill-content:hover {
   border: solid 1px var(--primary-color);
-  box-shadow: 0 0 5 var(--primary-color);
+  box-shadow: 0 0 2.5rem var(--primary-color);
 }
 
 .tools-icon img {
@@ -234,7 +234,7 @@ section {
 .tools-icon {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 5;
+  gap: 2rem;
 }
 
 .tools-icon img:hover {
@@ -243,7 +243,7 @@ section {
 }
 
 .Contact {
-  height: 100dvh;
+  min-height: 100dvh;
   background-color: var(--background-color);
   display: flex;
   flex-direction: column;
@@ -432,5 +432,37 @@ footer span {
     50% {
       transform: translateY(0.5rem);
     }
+  }
+
+  .Skills {
+    padding-top: clamp(7rem, 10vh, 14rem);
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    gap: 1rem;
+  }
+
+  .Skill-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    gap: 2rem;
+  }
+
+  .Skills h2 {
+    font-size: 2rem;
+  }
+
+  .Skills p {
+    font-size: 1.5rem;
+  }
+
+  .tools-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
   }
 }
