@@ -264,10 +264,10 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
-  padding: 0 5;
+  padding: 0 2.5rem;
   justify-content: center;
   align-items: center;
-  gap: 5;
+  gap: 2rem;
   max-width: auto;
 }
 
@@ -334,7 +334,7 @@ textarea {
 }
 
 .address h2 {
-  font-size: 5;
+  font-size: 2rem;
   letter-spacing: 0.15rem;
   margin-bottom: 0.5rem;
 }
@@ -464,5 +464,28 @@ footer span {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+  }
+
+  .Contact {
+    padding-top: clamp(7rem, 10vh, 14rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+
+  .Contact-grid {
+    display: block;
+  }
+
+  .Contact-form h2,
+  .form {
+    font-size: 1.5rem;
+  }
+
+  .address {
+    padding-top: 2rem;
+    text-align: center;
   }
 }
