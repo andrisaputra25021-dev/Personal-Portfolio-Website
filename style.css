@@ -14,6 +14,11 @@
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 section {
   height: 100dvh;
   scroll-margin-top: 5rem;
@@ -50,8 +55,8 @@ section {
   font-size: 1.5rem;
   font-weight: bold;
   display: flex;
-  gap: 5;
-  padding-right: 5;
+  gap: 1.5rem;
+  padding-right: 2.5%;
 }
 
 .navlink {
@@ -372,9 +377,9 @@ footer span {
   .menu {
     display: flex;
     color: var(--primary-color);
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding-right: 2.5%;
-    z-index: ;
+    z-index: 1100;
     cursor: pointer;
   }
 
