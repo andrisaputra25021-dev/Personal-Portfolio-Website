@@ -409,7 +409,7 @@ footer span {
   }
 
   .Home {
-    height: 100dvh;
+    padding-top: clamp(9rem, 20vh, 18rem);
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
