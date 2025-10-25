@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Lato:wght@400;500&display=swap");
 
+/*reset and variabels*/
 :root {
   --primary-color: cyan;
   --secondary-color: white;
@@ -24,6 +25,7 @@ section {
   scroll-margin-top: 5rem;
 }
 
+/*navigation bar*/
 .menu {
   display: none;
 }
@@ -32,18 +34,18 @@ section {
   top: 0;
   background-color: rgba(0, 0, 0, 0.75);
   width: 100%;
-  height: 5rem;
+  height: clamp(4rem, 6vw, 7rem);
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  border-bottom: solid 1px var(--primary-color);
+  border-bottom: solid clamp(1px, 0.1vw, 3px) var(--primary-color);
   position: fixed;
 }
 
 #Logo {
   font-family: "Montserrat", sans-serif;
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 3vw, 4rem);
   padding-left: 2.5%;
   color: var(--primary-color);
 }
@@ -52,10 +54,10 @@ section {
   color: var(--primary-color);
   list-style-type: none;
   font-family: "Lato", sans-serif;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 2vw, 2.5rem);
   font-weight: bold;
   display: flex;
-  gap: 1.5rem;
+  gap: clamp(1rem, 2vw, 2.5rem);
   padding-right: 2.5%;
 }
 
@@ -74,7 +76,7 @@ section {
 #Resume {
   color: var(--background-color);
   background-color: var(--primary-color);
-  border: solid 1px var(--primary-color);
+  border: solid clamp(1px, 0.1vw, 3px) var(--primary-color);
 }
 
 #Resume:hover {
@@ -82,6 +84,7 @@ section {
   background-color: var(--background-color);
 }
 
+/*hero section*/
 .Home {
   min-height: 100dvh;
   background-color: var(--background-color);
@@ -364,6 +367,12 @@ footer {
 
 footer span {
   font-weight: bolder;
+}
+
+@media (min-width: 2560px) {
+  html {
+    font-size: 125%;
+  }
 }
 
 @media (max-width: 640px) and (orientation: portrait) {
