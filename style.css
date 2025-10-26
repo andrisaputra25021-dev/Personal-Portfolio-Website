@@ -282,36 +282,21 @@ section {
   min-height: 100dvh;
   background-color: var(--background-color);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 4rem;
-}
-
-.Contact h1 {
-  color: var(--primary-color);
-  font-family: "Montserrat", sans-serif;
-  font-size: 3rem;
-  text-align: center;
-  padding: 1rem;
+  padding: 0 clamp(3rem, 3vw, 8rem);
 }
 
 .Contact-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 100%;
-  padding: 0 2.5rem;
   justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  max-width: auto;
-}
-
-.Contact-form h2 {
-  color: var(--secondary-color);
-  font-family: "Lato", sans-serif;
-  font-size: 1.5rem;
-  text-align: center;
+  align-items: stretch;
+  gap: 5rem;
+  border: solid 5px var(--primary-color);
+  border-radius: 1rem;
+  padding: 2.5%;
+  width: 80%;
 }
 
 .Contact-form {
@@ -323,24 +308,23 @@ section {
 .form {
   color: var(--secondary-color);
   font-family: "Lato", sans-serif;
-  font-size: 1rem;
+  font-size: clamp(1rem, 1vw, 3rem);
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
-  font-weight: bolder;
+  font-weight: 700;
   letter-spacing: 1px;
 }
 
 .form-format {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
 }
 
 .form-format input,
 textarea {
-  padding: 0.25rem;
-  border-radius: 0.6rem;
+  padding: 0.15rem;
+  border-radius: 0.5rem;
 }
 
 .Contact-submit {
@@ -366,17 +350,26 @@ textarea {
   color: var(--secondary-color);
   text-align: right;
   font-family: "Lato", sans-serif;
-  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: right;
+}
+
+.Contact h1 {
+  color: var(--primary-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
 }
 
 .address h2 {
-  font-size: 2rem;
+  font-size: clamp(1.2rem, 2vw, 2rem);
   letter-spacing: 0.15rem;
   margin-bottom: 0.5rem;
 }
 
 .address p {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 
 .sosmed-icon {
@@ -399,9 +392,10 @@ footer {
 }
 
 footer span {
-  font-weight: bolder;
+  font-weight: 700;
 }
 
+/*Responsive for Ultra Wide*/
 @media (min-width: 2560px) {
   html {
     font-size: 125%;
