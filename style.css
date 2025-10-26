@@ -48,6 +48,7 @@ section {
   font-size: clamp(2rem, 3vw, 4rem);
   padding-left: 2.5%;
   color: var(--primary-color);
+  cursor: pointer;
 }
 
 .navlist {
@@ -66,6 +67,7 @@ section {
   padding: 0.5rem;
   border-radius: 0.5rem;
   transition: ease-in-out, 0.25s;
+  cursor: pointer;
 }
 
 .navlink:hover {
@@ -90,7 +92,7 @@ section {
   background-color: var(--background-color);
   display: flex;
   align-items: center;
-  padding: 0 5rem;
+  padding: 0 clamp(3rem, 6vw, 8rem);
 }
 
 .Home-content {
@@ -100,13 +102,13 @@ section {
 .Home-content h1 {
   color: var(--primary-color);
   font-family: "Montserrat", sans-serif;
-  font-size: 4rem;
-  max-width: 30rem;
+  font-size: clamp(2.5rem, 5vw, 8rem);
+  max-width: 40rem;
   margin-bottom: 1rem;
   background: linear-gradient(
     45deg,
-    var(--primary-color) 45%,
-    var(--secondary-color) 60%
+    var(--primary-color) 40%,
+    var(--secondary-color) 50%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -116,25 +118,24 @@ section {
 .Home-content p {
   color: var(--secondary-color);
   font-family: "Lato", sans-serif;
-  font-size: 1.2rem;
-  max-width: 45rem;
+  font-size: clamp(1rem, 1.5vw, 3rem);
+  max-width: 50rem;
   margin-bottom: 0.5rem;
 }
 
 .Profile-picture {
-  height: 22rem;
-  width: 22rem;
+  height: clamp(20rem, 26vw, 30rem);
+  width: clamp(20rem, 26vw, 30rem);
   border-radius: 50%;
   padding: 1rem;
-  border: solid 3px var(--primary-color);
+  border: solid 5px var(--primary-color);
   object-fit: cover;
-  box-shadow: 0 0 10rem var(--primary-color);
+  box-shadow: 0 0 8rem var(--primary-color);
 }
 
 .Profile {
   align-items: center;
   position: relative;
-  padding-right: 2.5rem;
   animation: floating 2.5s ease-in-out infinite;
 }
 
@@ -153,8 +154,8 @@ section {
   color: var(--background-color);
   background-color: var(--primary-color);
   font-family: "Lato", sans-serif;
-  font-size: 1rem;
-  font-weight: bolder;
+  font-size: clamp(1rem, 1vw, 3rem);
+  font-weight: 700;
   text-align: center;
   margin: 1rem;
   padding: 0.5rem 1rem;
@@ -169,6 +170,7 @@ section {
   background-color: var(--background-color);
 }
 
+/*Skills Section*/
 .Skills {
   min-height: 100dvh;
   background-color: var(--background-color);
@@ -372,6 +374,10 @@ footer span {
 @media (min-width: 2560px) {
   html {
     font-size: 125%;
+  }
+
+  .Home-content p {
+    max-width: 60rem;
   }
 }
 
