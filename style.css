@@ -566,7 +566,7 @@ footer span {
   }
 
   .Skills {
-    padding: 0 2.5% 12vh 2.5%;
+    padding: 10vh 2.5% 0 2.5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -628,6 +628,6 @@ footer span {
 /*Responsive for Small Mobile*/
 @media (max-width: 480px) {
   html {
-    font-size: 80%;
+    font-size: 75%;
   }
 }
