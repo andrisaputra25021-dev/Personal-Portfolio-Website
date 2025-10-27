@@ -91,6 +91,7 @@ section {
   min-height: 100dvh;
   background-color: var(--background-color);
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 0 clamp(3rem, 6vw, 8rem);
 }
@@ -228,7 +229,7 @@ section {
 }
 
 .tools-icon img {
-  max-width: 7rem;
+  width: 7rem;
   border-radius: 50%;
   background-color: rgb(18, 18, 18);
   padding: 0.75rem;
@@ -282,6 +283,7 @@ section {
   min-height: 100dvh;
   background-color: var(--background-color);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 clamp(3rem, 3vw, 8rem);
@@ -359,11 +361,13 @@ textarea {
 .Contact h1 {
   color: var(--primary-color);
   font-family: "Montserrat", sans-serif;
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  font-size: clamp(2.5rem, 4vw, 7rem);
+  padding: 1rem;
 }
 
 .address h2 {
-  font-size: clamp(1.2rem, 2vw, 2rem);
+  font-size: clamp(2rem, 3vw, 5rem);
   letter-spacing: 0.15rem;
   margin-bottom: 0.5rem;
 }
@@ -406,9 +410,24 @@ footer span {
   }
 }
 
-@media (max-width: 640px) and (orientation: portrait) {
+/*Responsive for Large Desktop*/
+@media (min-width: 1440px) {
   html {
-    font-size: 70%;
+    font-size: 115%;
+  }
+}
+
+/*Responsive for Tablet*/
+@media (max-width: 1024px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+/*Responsive for Ipad*/
+@media (max-width: 768px) {
+  html {
+    font-size: 100%;
   }
 
   #Logo {
@@ -418,20 +437,22 @@ footer span {
   .menu {
     display: flex;
     color: var(--primary-color);
+    cursor: pointer;
     font-size: 2.5rem;
     padding-right: 2.5%;
-    z-index: 1100;
-    cursor: pointer;
   }
 
   .navlist {
     position: absolute;
-    top: 5rem;
+    top: 4rem;
     right: -100%;
     width: auto;
     height: auto;
     background-color: rgba(0, 0, 0, 0.75);
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
     text-align: right;
     transition: right 0.25s ease-in-out;
     border: solid 1px var(--primary-color);
@@ -444,7 +465,7 @@ footer span {
   .navlist li {
     color: var(--background-color);
     border: none;
-    margin: 2rem;
+    margin: rem;
     margin-right: 0;
   }
 
@@ -457,7 +478,7 @@ footer span {
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
-    gap: 1.5rem;
+    gap: 3rem;
   }
 
   .Profile {
@@ -527,5 +548,86 @@ footer span {
   .address {
     padding-top: 2rem;
     text-align: center;
+  }
+
+  .address h1 {
+    display: none;
+  }
+}
+
+/*Responsive for Mobile*/
+@media (max-width: 640px) {
+  html {
+    font-size: 85%;
+  }
+
+  section {
+    scroll-margin-top: 4rem;
+  }
+
+  .Skills {
+    padding: 0 2.5% 8vh 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .Skill-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    gap: 1rem;
+  }
+
+  .Skills h1 {
+    font-size: 2.5rem;
+  }
+  .Skills h2 {
+    font-size: 2rem;
+  }
+
+  .Skills p {
+    font-size: 1.5rem;
+  }
+
+  .tools-icon img {
+    width: 4rem;
+    border-radius: 50%;
+    background-color: rgb(18, 18, 18);
+    padding: 0.5rem;
+  }
+
+  .Contact {
+    padding: 0 2.5% 12vh 2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Contact-grid {
+    display: block;
+  }
+
+  .Contact-form h2,
+  .form {
+    font-size: 1.5rem;
+  }
+
+  .address {
+    padding-top: 2rem;
+    text-align: center;
+  }
+
+  .address h1 {
+    display: none;
+  }
+}
+
+/*Responsive for Small Mobile*/
+@media (max-width: 640px) {
+  html {
+    font-size: 85%;
   }
 }
