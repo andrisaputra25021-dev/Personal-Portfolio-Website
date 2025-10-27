@@ -21,7 +21,7 @@ body {
 }
 
 section {
-  height: 100dvh;
+  min-height: 100dvh;
   scroll-margin-top: 5rem;
 }
 
@@ -566,7 +566,7 @@ footer span {
   }
 
   .Skills {
-    padding: 6vh 2.5% 0 2.5%;
+    padding: 10vh 2.5% 10vh 2.5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -600,7 +600,7 @@ footer span {
   }
 
   .Contact {
-    padding: 0 2.5% 12vh 2.5%;
+    padding: 10vh 2.5% 10vh 2.5%;
     display: flex;
     justify-content: center;
     align-items: center;
