@@ -1,10 +1,10 @@
 # Personal Portfolio Website 🌐
 My personal portfolio website to showcase skills and projects as a **Front-End Developer**.  
-Built with **HTML and CSS**.
+Built with **HTML, CSS, and JavaScript**.
 ---
 
 ## ✨ Features
-- Section: Home, About, Skills, Projects, Contact
+- Section: Home, Skills, Contact
 - Smooth scroll navigation
 - Clean & simple UI
 ---
@@ -12,6 +12,7 @@ Built with **HTML and CSS**.
 ## 🛠️ Tech Stack
 - **HTML5**
 - **CSS3**
+- **JavaScript**
 ---
 
 ## 🚀 How to Run
