@@ -4,7 +4,7 @@ Built with **HTML, CSS, and JavaScript**.
 ---
 
 ## ✨ Features
-- Section: Home, Skills, Contact
+- Section: Home, Skills, Contact, Download Resume
 - Smooth scroll navigation
 - Clean & simple UI
 ---
