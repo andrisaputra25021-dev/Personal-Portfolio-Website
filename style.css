@@ -496,7 +496,7 @@ footer span {
   }
 
   .Skills {
-    padding-top: clamp(7rem, 10vh, 14rem);
+    padding-top: clamp(7rem, 12vh, 14rem);
     display: inline-block;
     justify-content: center;
     align-items: center;
@@ -566,7 +566,7 @@ footer span {
   }
 
   .Skills {
-    padding: 0 2.5% 8vh 2.5%;
+    padding: 0 2.5% 12vh 2.5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -626,8 +626,8 @@ footer span {
 }
 
 /*Responsive for Small Mobile*/
-@media (max-width: 640px) {
+@media (max-width: 480px) {
   html {
-    font-size: 85%;
+    font-size: 80%;
   }
 }
