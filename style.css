@@ -1,10 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Lato:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Share+Tech+Mono&display=swap");
 
 /*reset and variabels*/
 :root {
-  --primary-color: cyan;
-  --secondary-color: white;
-  --background-color: black;
+  --primary-color: #00e5ff;
+  --secondary-color: rgba(0, 229, 255, 0.4);
+  --card-background: rgba(0, 229, 255, 0.02);
+  --font-color: #ffffff;
+  --font-secondary: rgba(255, 255, 255, 0.55);
+  --border-color: rgba(0, 229, 255, 0.15);
 }
 
 * {
@@ -22,7 +25,7 @@ body {
 
 section {
   min-height: 100dvh;
-  scroll-margin-top: 5rem;
+  scroll-margin-top: 80px;
 }
 
 /*navigation bar*/
