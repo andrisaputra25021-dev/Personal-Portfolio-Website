@@ -75,7 +75,7 @@
       </section>
 
       <section id="about" class="about">
-        <div class="about-header">
+        <div class="about-header content-header">
           <h2><span>// 00 </span>ABOUT ME</h2>
           <div class="section-line"></div>
         </div>
@@ -177,8 +177,7 @@
                   href="https://andrisaputra25021-dev.github.io/videobelajar.id/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >LIVE DEMO
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  >LIVE DEMO <i class="fa-solid fa-square-arrow-up-right"></i>
                 </a>
                 <a
                   href="https://github.com/andrisaputra25021-dev/videobelajar.id.git"
@@ -210,8 +209,7 @@
                   href="https://andrisaputra25021-dev.github.io/ToDoList-app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >LIVE DEMO
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  >LIVE DEMO <i class="fa-solid fa-square-arrow-up-right"></i>
                 </a>
                 <a
                   href="https://github.com/andrisaputra25021-dev/ToDoList-app.git"
@@ -243,8 +241,7 @@
                   href="https://videobelajarid.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >LIVE DEMO
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  >LIVE DEMO <i class="fa-solid fa-square-arrow-up-right"></i>
                 </a>
                 <a
                   href="https://github.com/andrisaputra25021-dev/bootcamp-harisenin/tree/main/mission-adv-fe1"
@@ -311,74 +308,107 @@
         </div>
       </section>
 
-      <section id="Contact" class="Contact">
-        <h1 class="getintouch">Get In Touch</h1>
-        <div class="Contact-grid">
-          <div class="Contact-form">
-            <form class="form" name="contact" method="post" data-netlify="true">
-              <input type="hidden" name="form-name" value="contact" />
-              <div class="form-format">
-                <label for="name">Nama :</label>
-                <input type="text" id="name" name="name" required />
-              </div>
+      <section id="contact" class="contact">
+        <div class="contact-header">
+          <h2><span>// 03 </span>CONTACT</h2>
+          <div class="section-line"></div>
+        </div>
 
-              <div class="form-format">
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required />
-              </div>
-              <div class="form-format">
-                <label for="subject">Subjek :</label>
-                <input type="text" id="subject" name="subject" required />
-              </div>
-              <div class="form-format">
-                <label for="message">Pesan :</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  rows="5"
-                  required
-                ></textarea>
-              </div>
-              <button class="Contact-submit" type="submit">Submit</button>
-            </form>
+        <div class="contact-grid">
+          <div class="contact-leftside">
+            <p class="info">
+              Terbuka untuk peluang kerja, kolaborasi project, atau diskusi
+              mengenai web development.
+            </p>
+
+            <div class="dot-status">
+              <span class="dot"></span>
+              <span> [ RESPONSE TIME: < 24 Hour ] </span>
+            </div>
+
+            <ul class="list-account">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/andri-saputra-dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-linkedin"></i>LinkedIn :
+                  andri-saputra-dev</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/andrisaputra25021-dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-github"></i>Github :
+                  andrisaputra25021-dev
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://andrisaputra.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-solid fa-briefcase"></i>Portfolio :
+                  andrisaputra.netlify.app</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/andrisaputra.21/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-instagram"></i>Instagram :
+                  andrisaputra.21</a
+                >
+              </li>
+            </ul>
           </div>
 
-          <div class="address">
-            <div><h2>Andri Saputra</h2></div>
-            <div>
-              <p>andri.saputra25021@gmail.com</p>
-              <p>
-                Cipinang Besar Utara, Kecamatan Jatinegara,<br />
-                Kota Jakarta Timur,<br />
-                13410
-              </p>
-            </div>
-            <div class="sosmed-icon">
-              <a
-                href="https://www.linkedin.com/in/andri-saputra-dev/"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a
-                href="https://github.com/andrisaputra25021-dev"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/andrisaputra.21/"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-            </div>
+          <div class="contact-rightside">
+            <h3>SEND MESSAGE</h3>
+            <form class="form" name="contact" method="post" data-netlify="true">
+              <label for="name">NAME</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Your name ..."
+              />
+
+              <label for="email">EMAIL</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="your email ..."
+              />
+
+              <label for="message">MESSAGE</label>
+              <textarea
+                name="message"
+                id="message"
+                rows="5"
+                required
+                placeholder="What's on your mind?"
+              ></textarea>
+              <button class="message-btn" type="submit">
+                TRANSMIT MESSAGE
+              </button>
+            </form>
           </div>
         </div>
       </section>
+
       <footer>
-        <p>&copy; 2025 | <span>Andri Saputra</span> | All Right Reserved.</p>
+        <p>&copy; 2026 Andri Saputra</p>
+        <p>FRONT-END DEVELOPER // JAKARTA , ID</p>
+        <p>BUILD v2.0</p>
       </footer>
+
       <script src="main.js"></script>
     </div>
   </body>
