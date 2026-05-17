@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
@@ -7,185 +7,409 @@
       name="google-site-verification"
       content="3eX6XzgklVDJrnSfjT3hercP7pl9CH-x5NbW9YoSlVE"
     />
-    <meta name="description" content="Personal Website Portfolio" />
+    <meta name="description" content="Personal Portfolio, Andri Saputra" />
     <meta name="author" content="Andri Saputra" />
-    <meta name="theme-color" content="#00ffff" />
-    <link rel="icon" href="assets/favicon.png" />
+    <meta name="theme-color" content="#00e5ff" />
+    <link rel="icon" type="image/svg" href="assets/favicon.svg" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-66VDK6BCP0"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-66VDK6BCP0");
-    </script>
     <title>Andri Saputra | Portfolio</title>
   </head>
 
   <body>
     <header>
       <nav class="navbar">
-        <a href="#Home" id="Logo">Andri Saputra</a>
+        <a href="#home" id="Logo">ANDRI SAPUTRA</a>
         <ul class="navlist">
-          <li><a href="#Home" class="navlink">Home</a></li>
-          <li><a href="#Skills" class="navlink">Skills</a></li>
-          <li><a href="#Contact" class="navlink">Contact</a></li>
-          <li>
-            <a
-              class="navlink"
-              id="Resume"
-              href="https://drive.google.com/uc?export=download&id=1x7dvS2PcgPT7zFNc3KFPOm0rG1b-fIdF
-"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Resume <i class="fa-solid fa-circle-down"></i>
-            </a>
-          </li>
+          <li><a href="#home" class="navlink">HOME</a></li>
+          <li><a href="#about" class="navlink">ABOUT</a></li>
+          <li><a href="#projects" class="navlink">PROJECTS</a></li>
+          <li><a href="#skills" class="navlink">SKILLS</a></li>
+          <li><a href="#contact" class="navlink">CONTACT</a></li>
         </ul>
+
+        <div class="dot-status">
+          <span class="dot"></span>
+          <span>SYSTEM ONLINE</span>
+        </div>
+
         <div class="menu"><i class="fa-solid fa-bars" id="menu"></i></div>
       </nav>
     </header>
 
-    <section id="Home" class="Home">
-      <div class="Home-content">
-        <h1>Front-End <span>Developer</span></h1>
-        <p>Mengubah ide menjadi tampilan website modern dan interaktif.</p>
-        <p>
-          Menyatukan desain dengan kode untuk menghasilkan produk digital yg
-          memukau.
-        </p>
-        <a class="cta" href="#Contact">Let's connect</a>
-      </div>
-      <div class="Profile">
-        <img
-          src="assets/poto_profil.jpg"
-          alt="Andri Saputra | Front-End Developer"
-          class="Profile-picture"
-        />
-      </div>
-    </section>
+    <div class="background">
+      <section id="home" class="home">
+        <div class="home-leftside">
+          <h1>FRONT-END <span>DEVELOPER</span></h1>
+          <p>
+            Mengubah ide menjadi tampilan website modern dan interaktif.
+            Menyatukan desain dengan kode untuk menghasilkan produk digital yang
+            memukau.
+          </p>
 
-    <section id="Skills" class="Skills">
-      <h1>Skills</h1>
-      <div class="Skill-grid">
-        <div class="skill-content">
-          <i class="fa-solid fa-code costum-icon"></i>
-          <h2>Front-End Development</h2>
-          <p>
-            Merancang dan membangun tampilan web yang responsif dan interaktif
-            menggunakan HTML, CSS, dan JavaScript.
-          </p>
+          <div class="home-button">
+            <a class="cta" href="#contact">CONNECT </a>
+            <a
+              class="resume"
+              id="resume"
+              href="https://drive.google.com/file/d/1NiTWDcMV98Fo8ggb4RQlG5P-ro0ULRDn/view
+"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              VIEW RESUME
+            </a>
+          </div>
         </div>
-        <div class="skill-content">
-          <i class="fa-solid fa-toolbox costum-icon"></i>
-          <h2>Tools & Workflow</h2>
-          <p>
-            Menggunakan VSCode sebagai lingkungan pengembangan utama, Git dan
-            GitHub untuk version control serta kolaborasi, dan Netlify untuk
-            deployment.
-          </p>
-        </div>
-        <div class="skill-content">
-          <i class="fa-solid fa-lines-leaning costum-icon"></i>
-          <h2>Learning Path</h2>
-          <p>
-            Mengembangkan kemampuan di bidang JavaScript dan mulai menjelajahi
-            framework modern untuk membangun aplikasi web yang dinamis.
-          </p>
-        </div>
-      </div>
-      <div class="tools">
-        <h1>Tools & Technologies</h1>
-        <div class="tools-icon">
-          <img src="assets/vscode-logo.jpeg" alt="VScode" />
-          <img src="assets/html_logo.jpg" alt="HTML" />
-          <img src="assets/css_logo.jpg" alt="CSS" />
-          <img src="assets/JavaScript_logo_256.png" alt="Javascript" />
-          <img src="assets/Git-logo_256.png" alt="Git" />
-        </div>
-      </div>
-    </section>
 
-    <section id="Contact" class="Contact">
-      <h1 class="getintouch">Get In Touch</h1>
-      <div class="Contact-grid">
-        <div class="Contact-form">
-          <form class="form" name="contact" method="post" data-netlify="true">
-            <input type="hidden" name="form-name" value="contact" />
-            <div class="form-format">
-              <label for="name">Nama :</label>
-              <input type="text" id="name" name="name" required />
+        <div class="home-rightside">
+          <img
+            src="assets/poto_profil.jpg"
+            alt="Andri Saputra | Front-End Developer"
+            class="profile-picture"
+          />
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="about-header content-header">
+          <h2><span>// 00 </span>ABOUT ME</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-content">
+          <div class="about-leftside">
+            <p>
+              Saya <span>Andri Saputra</span>, seorang
+              <span>Junior Front-End Developer </span>dengan kemampuan membangun
+              antarmuka web menggunakan HTML5, CSS3, Javascipt, dan React. Saat
+              ini telah menyelesaikan bootcamp dan sedang aktif mencari
+              pekerjaan di industri teknologi.
+            </p>
+            <p>
+              Perjalanan saya menuju <span>Web Development</span> berawal dari
+              rasa penasaran tentang bagaimana website bekerja dan dikembangkan,
+              lalu saya memutuskan untuk mempelajari dan membuatnya sendiri.
+              Sebagai career switcher, saya membawa perspektif yang berbeda:
+              ketelitian dari pengalaman administrasi, kemampuan koordinasi
+              lintas tim dari pengalaman lapangan, serta orientasi pada detail
+              yang langsung relevan dalam kolaborasi tim pengembangan.
+            </p>
+            <p class="quote">
+              "Latar belakang yang beragam bukan hambatan, melainkan keunggulan
+              yang membentuk cara saya berpikir, berkomunikasi, dan
+              berkolaborasi dalam tim.
+            </p>
+            <p>
+              Saya percaya bahwa seorang developer yang baik tidak hanya menulis
+              kode, tetapi memahami kebutuhan pengguna dan konteks bisnis di
+              balik sebuah produk, dan itu lah yang ingin saya buktikan.
+            </p>
+          </div>
+
+          <div class="about-rightside">
+            <div class="box">
+              <h3>LOCATION</h3>
+              <p>Cipayung, Jakarta Timur, <span>Indonesia</span></p>
+            </div>
+            <div class="box">
+              <h3>CURRENT STATUS</h3>
+              <p>
+                Fresh Graduate bootcamp FSD Harisenin.com, Batch 18, Carrier
+                Path
+                <span>Front-End Developer</span>
+              </p>
             </div>
 
-            <div class="form-format">
-              <label for="email">Email :</label>
-              <input type="email" id="email" name="email" required />
+            <div class="box">
+              <h3>SOFT SKILLS</h3>
+              <p>
+                Komunikatif, Adaptif, Pemecahan masalah, Berorientasi pada
+                detail, Ketelitian, Fleksibel, Koordinasi lintas tim, Manajemen
+                dokumen
+              </p>
             </div>
-            <div class="form-format">
-              <label for="subject">Subjek :</label>
-              <input type="text" id="subject" name="subject" required />
+            <div class="box">
+              <h3>MISSION</h3>
+              <p>
+                Berkontribusi sebagai
+                <span>Junior Front-End Developer </span> dan terus bertumbuh
+                dalam membangun produk web yang berdampak
+              </p>
             </div>
-            <div class="form-format">
-              <label for="message">Pesan :</label>
+          </div>
+        </div>
+        <div class="dot-about">
+          <span class="dot"></span>
+          <span>OPEN TO WORK</span>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <div class="projects-header">
+          <h2><span>// 01 </span>PROJECTS</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="list-projects">
+          <div class="card-projects">
+            <div class="thumbnail">
+              <img
+                src="/assets/landing-page-educourse.png"
+                alt="Thumbnail Landing Page"
+              />
+            </div>
+            <div class="projects-details">
+              <h1>LANDING PAGE</h1>
+              <p>
+                Halaman landing page dengan layout modern dan mobile first
+                approach.
+              </p>
+              <div class="projects-tech">
+                <p>HTML</p>
+                <p>CSS</p>
+              </div>
+              <div class="projects-link">
+                <a
+                  href="https://andrisaputra25021-dev.github.io/videobelajar.id/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LIVE DEMO <i class="fa-solid fa-square-arrow-up-right"></i>
+                </a>
+                <a
+                  href="https://github.com/andrisaputra25021-dev/videobelajar.id.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GITHUB</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="card-projects">
+            <div class="thumbnail">
+              <img src="/assets/todo-list-app.png" alt="Todo List App" />
+            </div>
+            <div class="projects-details">
+              <h1>TODO LIST APP</h1>
+              <p>
+                Aplikasi manajemen tugas interaktif. Buat tugas, update, dan
+                hapus tugas. Murni dengan DOM manipulation.
+              </p>
+              <div class="projects-tech">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JAVASCRIPT</p>
+              </div>
+              <div class="projects-link">
+                <a
+                  href="https://andrisaputra25021-dev.github.io/ToDoList-app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LIVE DEMO <i class="fa-solid fa-square-arrow-up-right"></i>
+                </a>
+                <a
+                  href="https://github.com/andrisaputra25021-dev/ToDoList-app.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GITHUB</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="card-projects">
+            <div class="thumbnail">
+              <img src="/assets/landing-page-crud.png" alt="Admin CRUD" />
+            </div>
+            <div class="projects-details">
+              <h1>CRUD</h1>
+              <p>
+                Manajemen state global dengan Zustand. CRUD lengkap dengan
+                tambah, edit, hapus data course secara reaktif tanpa props
+                drilling.
+              </p>
+              <div class="projects-tech">
+                <p>REACT</p>
+                <p>ZUSTAND</p>
+              </div>
+              <div class="projects-link">
+                <a
+                  href="https://andrisaputra25021-dev.github.io/admin-crud-zustand/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LIVE DEMO <i class="fa-solid fa-square-arrow-up-right"></i>
+                </a>
+                <a
+                  href="https://github.com/andrisaputra25021-dev/admin-crud-zustand.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GITHUB</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills">
+        <div class="skills-header">
+          <h2><span>// 02 </span>SKILLS & TECH</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skills-tools">
+            <i class="fa-brands fa-html5"></i>
+            <p>HTML</p>
+          </div>
+
+          <div class="skills-tools">
+            <i class="fa-brands fa-css3-alt"></i>
+            <p>CSS</p>
+          </div>
+
+          <div class="skills-tools">
+            <i class="fa-brands fa-js"></i>
+            <p>JAVASCRIPT</p>
+          </div>
+
+          <div class="skills-tools">
+            <img
+              src="/assets/icons8-tailwind-css-50.svg"
+              alt="Tailwindcss Icon"
+              type="image/svg"
+            />
+            <p>TAILWIND</p>
+          </div>
+
+          <div class="skills-tools">
+            <i class="fa-brands fa-react"></i>
+            <p>REACT</p>
+          </div>
+
+          <div class="skills-tools">
+            <i class="fa-brands fa-git-alt"></i>
+            <p>GIT</p>
+          </div>
+
+          <div class="skills-tools">
+            <i class="fa-brands fa-github"></i>
+            <p>GITHUB</p>
+          </div>
+
+          <div class="skills-tools">
+            <i class="fa-brands fa-figma"></i>
+            <p>FIGMA</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="contact-header">
+          <h2><span>// 03 </span>CONTACT</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-leftside">
+            <p class="info">
+              Terbuka untuk peluang kerja, kolaborasi project, atau diskusi
+              mengenai web development.
+            </p>
+
+            <div class="dot-status">
+              <span class="dot"></span>
+              <span> [ RESPONSE TIME: < 24 Hour ] </span>
+            </div>
+
+            <ul class="list-account">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/andri-saputra-dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-linkedin"></i>LinkedIn :
+                  andri-saputra-dev</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/andrisaputra25021-dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-github"></i>Github :
+                  andrisaputra25021-dev
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://andrisaputra.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-solid fa-briefcase"></i>Portfolio :
+                  andrisaputra.netlify.app</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/andrisaputra.21/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-instagram"></i>Instagram :
+                  andrisaputra.21</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-rightside">
+            <h3>SEND MESSAGE</h3>
+            <form class="form" name="contact" method="post" data-netlify="true">
+              <label for="name">NAME</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Your name ..."
+              />
+
+              <label for="email">EMAIL</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Your email ..."
+              />
+
+              <label for="message">MESSAGE</label>
               <textarea
                 name="message"
                 id="message"
                 rows="5"
                 required
+                placeholder="What's on your mind?"
               ></textarea>
-            </div>
-            <button class="Contact-submit" type="submit">Submit</button>
-          </form>
+              <button class="message-btn" type="submit">
+                TRANSMIT MESSAGE
+              </button>
+            </form>
+          </div>
         </div>
+      </section>
+    </div>
 
-        <div class="address">
-          <div><h2>Andri Saputra</h2></div>
-          <div>
-            <p>andri.saputra25021@gmail.com</p>
-            <p>
-              Cipinang Besar Utara, Kecamatan Jatinegara,<br />
-              Kota Jakarta Timur,<br />
-              13410
-            </p>
-          </div>
-          <div class="sosmed-icon">
-            <a
-              href="https://www.linkedin.com/in/andri-saputra-dev/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-            <a
-              href="https://github.com/andrisaputra25021-dev"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-            <a
-              href="https://www.instagram.com/andrisaputra.21/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-    </section>
     <footer>
-      <p>&copy; 2025 | <span>Andri Saputra</span> | All Right Reserved.</p>
+      <p>&copy; 2026 Andri Saputra</p>
+      <p>FRONT-END DEVELOPER // JAKARTA , ID</p>
+      <p>BUILD v2.0</p>
     </footer>
+
     <script src="main.js"></script>
   </body>
 </html>
