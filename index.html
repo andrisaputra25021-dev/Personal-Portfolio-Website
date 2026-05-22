@@ -31,6 +31,19 @@
           <li><a href="#contact" class="navlink">CONTACT</a></li>
         </ul>
 
+        <div class="lang-switcher">
+          <button
+            class="lang-btn active"
+            data-lang="id"
+            onclick="setLanguage('id')"
+          >
+            ID</button
+          ><span>|</span>
+          <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">
+            EN
+          </button>
+        </div>
+
         <div class="dot-status">
           <span class="dot"></span>
           <span>SYSTEM ONLINE</span>
@@ -44,7 +57,7 @@
       <section id="home" class="home">
         <div class="home-leftside">
           <h1>FRONT-END <span>DEVELOPER</span></h1>
-          <p>
+          <p data-i18n="hero.desc">
             Mengubah ide menjadi tampilan website modern dan interaktif.
             Menyatukan desain dengan kode untuk menghasilkan produk digital yang
             memukau.
@@ -82,14 +95,14 @@
 
         <div class="about-content">
           <div class="about-leftside">
-            <p>
+            <p data-i18n="about.p1">
               Saya <span>Andri Saputra</span>, seorang
               <span>Junior Front-End Developer </span>dengan kemampuan membangun
               antarmuka web menggunakan HTML5, CSS3, Javascipt, dan React. Saat
               ini telah menyelesaikan bootcamp dan sedang aktif mencari
               pekerjaan di industri teknologi.
             </p>
-            <p>
+            <p data-i18n="about.p2">
               Perjalanan saya menuju <span>Web Development</span> berawal dari
               rasa penasaran tentang bagaimana website bekerja dan dikembangkan,
               lalu saya memutuskan untuk mempelajari dan membuatnya sendiri.
@@ -98,12 +111,12 @@
               lintas tim dari pengalaman lapangan, serta orientasi pada detail
               yang langsung relevan dalam kolaborasi tim pengembangan.
             </p>
-            <p class="quote">
+            <p class="quote" data-i18n="about.p3">
               "Latar belakang yang beragam bukan hambatan, melainkan keunggulan
               yang membentuk cara saya berpikir, berkomunikasi, dan
               berkolaborasi dalam tim.
             </p>
-            <p>
+            <p data-i18n="about.p4">
               Saya percaya bahwa seorang developer yang baik tidak hanya menulis
               kode, tetapi memahami kebutuhan pengguna dan konteks bisnis di
               balik sebuah produk, dan itu lah yang ingin saya buktikan.
@@ -164,7 +177,7 @@
             </div>
             <div class="projects-details">
               <h1>LANDING PAGE</h1>
-              <p>
+              <p data-i18n="projects.p1_desc">
                 Halaman landing page dengan layout modern dan mobile first
                 approach.
               </p>
@@ -195,7 +208,7 @@
             </div>
             <div class="projects-details">
               <h1>TODO LIST APP</h1>
-              <p>
+              <p data-i18n="projects.p2_desc">
                 Aplikasi manajemen tugas interaktif. Buat tugas, update, dan
                 hapus tugas. Murni dengan DOM manipulation.
               </p>
@@ -227,7 +240,7 @@
             </div>
             <div class="projects-details">
               <h1>CRUD</h1>
-              <p>
+              <p data-i18n="projects.p3_desc">
                 Manajemen state global dengan Zustand. CRUD lengkap dengan
                 tambah, edit, hapus data course secara reaktif tanpa props
                 drilling.
@@ -316,7 +329,7 @@
 
         <div class="contact-grid">
           <div class="contact-leftside">
-            <p class="info">
+            <p class="info" data-i18n="contact.info">
               Terbuka untuk peluang kerja, kolaborasi project, atau diskusi
               mengenai web development.
             </p>

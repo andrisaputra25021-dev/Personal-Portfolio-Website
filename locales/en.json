@@ -1,0 +1,23 @@
+{
+  "hero": {
+    "desc": "Turning ideas into modern and interactive web experiences. Bridging design and code to craft compelling digital products."
+  },
+  "about": {
+    "p1": "I'm Andri Saputra, a Junior Front-End Developer with the ability to build web interfaces using HTML5, CSS3, Javascript, and React. I have recently completed a bootcamp and am actively seeking opportunities in the tech industry.",
+    "p2": "My journey into Web Development started from curiosity about how websites work and are built, which led me to learn and create them myself. As a career switcher, I bring a different perspective: attention to detail from administrative experience, cross-team coordination from field experience, and a detail-oriented mindset directly relevant to development team collaboration.",
+    "p3": "A diverse background is not a barrier, but an advantage that shapes the way I think, communicate, and collaborate within a team.",
+    "p4": "I believe that a good developer not only writes code, but understands user needs and the business context behind a product — and that is what I want to prove.",
+    "location_val": "Cipayung, East Jakarta, Indonesia",
+    "status_val": "Fresh Graduate FSD Bootcamp Harisenin.com, Batch 18, Career Path Front-End Developer",
+    "soft_val": "Communicative, Adaptive, Problem solving, Detail oriented, Accuracy, Flexible, Cross-team coordination, Document management",
+    "mission_val": "To contribute as a Junior Front-End Developer and continue growing in building impactful web products"
+  },
+  "projects": {
+    "p1_desc": "A landing page with modern layout and mobile first approach.",
+    "p2_desc": "An interactive task management app. Create, update, and delete tasks. Built purely with DOM manipulation.",
+    "p3_desc": "Global state management with Zustand. Full CRUD with reactive add, edit, and delete of course data without props drilling."
+  },
+  "contact": {
+    "info": "Open to job opportunities, project collaborations, or discussions about web development."
+  }
+}

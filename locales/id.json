@@ -1,0 +1,23 @@
+{
+  "hero": {
+    "desc": "Mengubah ide menjadi tampilan website modern dan interaktif. Menyatukan desain dengan kode untuk menghasilkan produk digital yang memukau."
+  },
+  "about": {
+    "p1": "Saya Andri Saputra, seorang Junior Front-End Developer dengan kemampuan membangun antarmuka web menggunakan HTML5, CSS3, Javascript, dan React. Saat ini telah menyelesaikan bootcamp dan sedang aktif mencari pekerjaan di industri teknologi.",
+    "p2": "Perjalanan saya menuju Web Development berawal dari rasa penasaran tentang bagaimana website bekerja dan dikembangkan, lalu saya memutuskan untuk mempelajari dan membuatnya sendiri. Sebagai career switcher, saya membawa perspektif yang berbeda: ketelitian dari pengalaman administrasi, kemampuan koordinasi lintas tim dari pengalaman lapangan, serta orientasi pada detail yang langsung relevan dalam kolaborasi tim pengembangan.",
+    "p3": "Latar belakang yang beragam bukan hambatan, melainkan keunggulan yang membentuk cara saya berpikir, berkomunikasi, dan berkolaborasi dalam tim.",
+    "p4": "Saya percaya bahwa seorang developer yang baik tidak hanya menulis kode, tetapi memahami kebutuhan pengguna dan konteks bisnis di balik sebuah produk, dan itu lah yang ingin saya buktikan.",
+    "location_val": "Cipayung, Jakarta Timur, Indonesia",
+    "status_val": "Fresh Graduate bootcamp FSD Harisenin.com, Batch 18, Carrier Path Front-End Developer",
+    "soft_val": "Komunikatif, Adaptif, Pemecahan masalah, Berorientasi pada detail, Ketelitian, Fleksibel, Koordinasi lintas tim, Manajemen dokumen",
+    "mission_val": "Berkontribusi sebagai Junior Front-End Developer dan terus bertumbuh dalam membangun produk web yang berdampak"
+  },
+  "projects": {
+    "p1_desc": "Halaman landing page dengan layout modern dan mobile first approach.",
+    "p2_desc": "Aplikasi manajemen tugas interaktif. Buat tugas, update, dan hapus tugas. Murni dengan DOM manipulation.",
+    "p3_desc": "Manajemen state global dengan Zustand. CRUD lengkap dengan tambah, edit, hapus data course secara reaktif tanpa props drilling."
+  },
+  "contact": {
+    "info": "Terbuka untuk peluang kerja, kolaborasi project, atau diskusi mengenai web development."
+  }
+}
