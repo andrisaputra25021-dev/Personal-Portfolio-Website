@@ -120,6 +120,39 @@ section {
   }
 }
 
+/* Language Switcher */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--border-color);
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  color: var(--primary-color);
+  font-family: var(--font-body);
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: all 0.25s ease-in-out;
+}
+
+.lang-btn.active {
+  opacity: 1;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.lang-btn:hover {
+  color: var(--font-primary-color);
+  text-shadow:
+    0 0 8px var(--primary-color),
+    0 0 24px var(--primary-color);
+}
+
 /*hero section*/
 .home {
   display: flex;
@@ -682,6 +715,13 @@ footer {
     padding: 80px 0 60px;
   }
 
+  .lang-switcher {
+    padding-right: 2.5%;
+  }
+  .lang-btn {
+    font-size: 10px;
+  }
+
   .menu {
     display: flex;
     color: var(--primary-color);
@@ -697,7 +737,7 @@ footer {
     top: 60px;
     right: -100%;
     width: auto;
-    background-color: var(--bg);
+    background-color: #050a0f;
     display: flex;
     flex-direction: column;
     padding: 16px;
