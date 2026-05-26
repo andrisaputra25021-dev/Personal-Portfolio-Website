@@ -55,3 +55,38 @@ document.addEventListener("DOMContentLoaded", () => {
   const savedLang = localStorage.getItem("lang") || "id";
   setLanguage(savedLang);
 });
+
+// animasi konten About
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  },
+  { threshold: 0.15 },
+);
+
+// Observe left side about
+const aboutLeft = document.querySelector(".about-leftside");
+if (aboutLeft) observer.observe(aboutLeft);
+
+// Observe tiap box satu-satu
+const boxes = document.querySelectorAll(".about-rightside .box");
+boxes.forEach((box) => observer.observe(box));
+
+// animasi card project
+const cards = document.querySelectorAll(".card-projects");
+cards.forEach((card) => observer.observe(card));
+
+// animasi card skills
+const skillItems = document.querySelectorAll(".skills-tools");
+skillItems.forEach((item) => observer.observe(item));
+
+// animasi contact konten
+const contactLeft = document.querySelector(".contact-leftside");
+const contactRight = document.querySelector(".contact-rightside");
+
+if (contactLeft) observer.observe(contactLeft);
+if (contactRight) observer.observe(contactRight);
