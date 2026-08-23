@@ -170,6 +170,13 @@ section {
   margin-top: 60px;
 }
 
+.home-leftside .level {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 24px;
+  letter-spacing: 4px;
+  color: var(--primary-color);
+}
+
 .home-leftside h1 {
   color: var(--font-primary-color);
   font-family: var(--font-heading);

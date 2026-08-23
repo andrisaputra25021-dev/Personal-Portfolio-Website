@@ -13,7 +13,7 @@
     "mission_val": "Berkontribusi sebagai Front-End Developer dan terus bertumbuh dalam membangun produk web yang berdampak"
   },
   "projects": {
-    "p1_desc": "Halaman landing page dengan layout modern dan mobile first approach.",
+    "pantaubelanja_desc": "Personal budget tracker untuk pengguna non-tech-savvy. Rekap pengeluaran otomatis per kategori dengan visualisasi donut chart, dibangun dengan autentikasi & database Supabase.",
     "p2_desc": "Aplikasi manajemen tugas interaktif. Buat tugas, update, dan hapus tugas. Murni dengan DOM manipulation.",
     "p3_desc": "Aplikasi web e-learning berfitur lengkap dengan fungsi CRUD (Create, Read, Update, Delete) yang lengkap."
   },

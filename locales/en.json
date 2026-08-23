@@ -13,7 +13,7 @@
     "mission_val": "Contribute as a Front-End Developer and continue growing in building impactful web products"
   },
   "projects": {
-    "p1_desc": "A landing page with modern layout and mobile first approach.",
+    "pantaubelanja_desc": "Personal budget tracker for non-tech-savvy users. Automatic expense recap by category with donut chart visualization, built with Supabase authentication & database.",
     "p2_desc": "An interactive task management app. Create, update, and delete tasks. Built purely with DOM manipulation.",
     "p3_desc": "A full-featured e-learning web app with complete CRUD functionality."
   },
